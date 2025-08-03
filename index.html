@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple web page that demonstrates accessibility and SEO best practices.">
+    <meta name="keywords" content="HTML5, accessibility, SEO, semantic, web design">
+    <meta name="author" content="Your Name">
+    <title>Accessible & SEO-Friendly Web Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS Link -->
+</head>
+
+<body>
+
+    <!-- Main header of the page -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" title="Go to home section">Home</a></li>
+                <li><a href="#about" title="Learn more about us">About</a></li>
+                <li><a href="#services" title="View our services">Services</a></li>
+                <li><a href="#contact" title="Contact us for inquiries">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <section id="home">
+            <h1>Emaxim And Friends</h1>
+            <p>We are committed to creating accessible and user-friendly websites that follow modern web standards.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We specialize in web design and development with a focus on inclusivity and SEO optimization.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Responsive Web Design</li>
+                <li>SEO Optimization</li>
+                <li>Web Accessibility Audits</li>
+                <li>Custom Web Development</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get in touch, please use the form below.</p>
+
+            <!-- Accessible form -->
+            <form action="/submit" method="POST">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name" required aria-label="Full Name">
+
+                <label for="email">Your email:</label>
+                <input type="email" id="email" name="email" required aria-label="Email Address">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-label="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer content -->
+    <footer>
+        <p>&copy; 2025 Emaxim and Friends. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
